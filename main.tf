@@ -17,7 +17,7 @@ resource "aws_budgets_budget" "monthly-budget" {
   budget_type       = "COST"
   limit_amount      = "100"
   limit_unit        = "USD"
-  time_period_start = "2020-09-01_00:00"
+  time_period_start = "2025-06-01_00:00"
   time_unit         = "MONTHLY"
 
   notification {
@@ -27,4 +27,5 @@ resource "aws_budgets_budget" "monthly-budget" {
     notification_type          = "FORECASTED"
     subscriber_email_addresses = ["user@example.com"]
   }
+
 }
