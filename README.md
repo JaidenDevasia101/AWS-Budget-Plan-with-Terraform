@@ -60,7 +60,7 @@ terraform apply -var-file=envs/dev/terraform.tfvars
 
 ---
 
-### **6. Example `tfvars`**
+### **. Example `tfvars`**
 ```md
 ## Example: envs/dev/terraform.tfvars
 region = "us-east-1"
