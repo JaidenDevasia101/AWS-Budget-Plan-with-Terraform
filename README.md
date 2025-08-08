@@ -27,3 +27,19 @@ This module automates AWS Budget creation so organizations can:
 
 Terraform Code  →  AWS Budgets API  →  Budget(s) Created
                               ↳ Notifications → Email / SNS
+
+## Getting Started
+
+### Prerequisites
+- Terraform >= 1.6
+- AWS CLI configured with `budgets:*` and `sns:Publish` permissions
+
+### Quick Deploy
+
+```bash
+git clone https://github.com/<your-username>/terraform-aws-budgets.git
+cd terraform-aws-budgets
+
+terraform init
+terraform plan -var-file=envs/dev/terraform.tfvars
+terraform apply -var-file=envs/dev/terraform.tfvars
