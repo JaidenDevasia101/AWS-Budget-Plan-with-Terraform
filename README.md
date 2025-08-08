@@ -25,6 +25,8 @@ This module automates AWS Budget creation so organizations can:
 - **Environment Ready** — Separate `dev` and `prod` configurations for safe rollouts.
 - **Reusable Module** — Drop into any AWS account and configure via `.tfvars` files.
 
+## Visual Mapping
+
 Terraform Code  →  AWS Budgets API  →  Budget(s) Created
                               ↳ Notifications → Email / SNS
 
