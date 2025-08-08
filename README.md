@@ -45,3 +45,33 @@ cd terraform-aws-budgets
 terraform init
 terraform plan -var-file=envs/dev/terraform.tfvars
 terraform apply -var-file=envs/dev/terraform.tfvars
+
+
+---
+
+### **6. Example `tfvars`**
+```md
+## Example: envs/dev/terraform.tfvars
+region = "us-east-1"
+
+budgets = {
+  "dev-monthly" = {
+    amount            = 100
+    time_unit         = "MONTHLY"
+    limit_unit        = "USD"
+    budget_type       = "COST"
+    thresholds        = [50, 80, 100]
+    actual_thresholds = [50, 80, 100]
+    threshold_type    = "PERCENTAGE"
+    emails            = ["devops@example.com"]
+    cost_filters      = { Service = ["AmazonEC2", "AmazonS3"] }
+  }
+}
+
+## Skills Demonstrated
+
+- **Infrastructure as Code (IaC)** — Modular Terraform design with variables, outputs, and `for_each`.
+- **AWS Budget Management** — Automating cost governance at scale.
+- **Environment Segregation** — Separate `dev` and `prod` state and configurations.
+- **Dynamic Blocks** — Advanced Terraform looping to generate multiple notifications and cost filters.
+- **Reusable Modules** — Designed for easy drop-in to any AWS project.
