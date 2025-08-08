@@ -1,15 +1,7 @@
-# <h1>AWS-Budget-Plan-with-Terraform</h1>
+# Terraform AWS Budgets Module
 
-<h2>Description</h2>
-Created a Budget Plan for AWS Account using Terraform. Terraform is a great way to easily spin up infrastructure in AWS using code. With this infrastrucutre as code setup with Terraform I am able to now easily modify my AWS budget plan as I please by changing a few lines in VS Code.
-<br />
+A reusable Terraform module that creates and manages AWS Budgets for cost control and forecasting.  
+Supports multiple budgets, ACTUAL and FORECASTED notifications, email/SNS alerts, and fine-grained cost filters.
 
-
-<h2>Languages and Utilities Used</h2>
-
-- <b>Terraform</b> 
-- <b>AWS (IAM/Budgets)</b>
-
-<h2>Environments Used </h2>
-
-- <b>VS Code</b>
+![Terraform](https://img.shields.io/badge/Terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazonaws&logoColor=white)
