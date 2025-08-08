@@ -30,6 +30,17 @@ This module automates AWS Budget creation so organizations can:
 Terraform Code  →  AWS Budgets API  →  Budget(s) Created
                               ↳ Notifications → Email / SNS
 
+## Skills Demonstrated
+
+- **Infrastructure as Code (IaC)** — Modular Terraform design with variables, outputs, and `for_each`.
+- **AWS Budget Management** — Automating cost governance at scale.
+- **Environment Segregation** — Separate `dev` and `prod` state and configurations.
+- **Dynamic Blocks** — Advanced Terraform looping to generate multiple notifications and cost filters.
+- **Reusable Modules** — Designed for easy drop-in to any AWS project.
+- Add AWS Budgets Actions (e.g., automatically detach policies when threshold hit)
+- Include Infracost integration for PR cost diffs
+- Add optional Slack alert integration
+
 ## Getting Started
 
 ### Prerequisites
@@ -67,15 +78,3 @@ budgets = {
     cost_filters      = { Service = ["AmazonEC2", "AmazonS3"] }
   }
 }
-
-## Skills Demonstrated
-
-- **Infrastructure as Code (IaC)** — Modular Terraform design with variables, outputs, and `for_each`.
-- **AWS Budget Management** — Automating cost governance at scale.
-- **Environment Segregation** — Separate `dev` and `prod` state and configurations.
-- **Dynamic Blocks** — Advanced Terraform looping to generate multiple notifications and cost filters.
-- **Reusable Modules** — Designed for easy drop-in to any AWS project.
-- Add AWS Budgets Actions (e.g., automatically detach policies when threshold hit)
-- Include Infracost integration for PR cost diffs
-- Add optional Slack alert integration
-
