@@ -75,3 +75,7 @@ budgets = {
 - **Environment Segregation** — Separate `dev` and `prod` state and configurations.
 - **Dynamic Blocks** — Advanced Terraform looping to generate multiple notifications and cost filters.
 - **Reusable Modules** — Designed for easy drop-in to any AWS project.
+- Add AWS Budgets Actions (e.g., automatically detach policies when threshold hit)
+- Include Infracost integration for PR cost diffs
+- Add optional Slack alert integration
+
