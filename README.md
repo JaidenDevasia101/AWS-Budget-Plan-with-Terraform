@@ -6,7 +6,7 @@ Supports multiple budgets, ACTUAL and FORECASTED notifications, email/SNS alerts
 ![Terraform](https://img.shields.io/badge/Terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-## Why this project exists
+## What this Project Solves
 
 Cloud cost overruns are common — especially in multi-team AWS accounts.  
 This module automates AWS Budget creation so organizations can:
